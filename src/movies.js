@@ -17,7 +17,7 @@ function removeDuplicates(moviesArray) {
   let cleanArray = allDirectors.filter((film, index) => {
     return allDirectors.indexOf(film) === index;
   });
-  
+
   return cleanArray;
 }
 
@@ -124,4 +124,26 @@ function orderAlphabetically(moviesArray) {
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 
+function turnHourToMinutes(moviesArray){
+    const updatedMovies= moviesArray.map(film)=>{
+        const movieCopy = {...}
+
+        movieCopy.duration = covertDuration
+    }
+}
 // BONUS - Iteration 8: Best yearly rate average - Best yearly rate average
+create an object and create its properties using object bracket notation
+
+function bestYearAvg(moviesArray) {
+    const dict = {};
+
+    moviesArray.forEach(movie) => {
+        const year= dict[movie.year];
+
+        if (!year){
+         dict[movie.year] = [movie]
+       } else {
+           dict[movie.year].push(movie)
+       }      
+   }
+}
